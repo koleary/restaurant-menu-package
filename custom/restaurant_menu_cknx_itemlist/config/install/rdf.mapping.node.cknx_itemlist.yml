@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cknx_itemlist
+  module:
+    - node
+id: node.cknx_itemlist
+targetEntityType: node
+bundle: cknx_itemlist
+types:
+  - 'schema:ItemList'
+fieldMappings:
+  cknx_description:
+    properties:
+      - 'schema:description'
+  cknx_image:
+    properties:
+      - 'schema:image'
+  cknx_itemlistelement:
+    properties:
+      - 'schema:itemListElement'

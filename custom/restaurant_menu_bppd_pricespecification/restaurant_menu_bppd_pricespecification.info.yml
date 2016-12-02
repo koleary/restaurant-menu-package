@@ -1,0 +1,17 @@
+name: 'Standard price'
+description: 'Provides Standard price content type and related configuration. A standard price for a class of items, for example all large pizzas, or all soft drinks'
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - field
+  - language
+  - menu_ui
+  - node
+  - path
+  - rdf
+  - restaurant_menu_hbew_product
+  - taxonomy
+  - user
+  - views
+package: 'Restaurant Menu'

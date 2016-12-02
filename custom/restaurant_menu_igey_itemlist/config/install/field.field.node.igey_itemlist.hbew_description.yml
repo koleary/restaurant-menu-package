@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hbew_description
+    - node.type.igey_itemlist
+id: node.igey_itemlist.hbew_description
+field_name: hbew_description
+entity_type: node
+bundle: igey_itemlist
+label: 'Menu description'
+description: 'Add a brief description of the menu (optional).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

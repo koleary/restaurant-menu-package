@@ -1,0 +1,17 @@
+name: 'Menu Category'
+description: 'Provides Menu Category content type and related configuration. The menu items available within a specific category, for example soups, or side dishes.'
+type: module
+core: 8.x
+dependencies:
+  - base_business_content_model_mtyk_place
+  - field
+  - inline_entity_form
+  - language
+  - menu_ui
+  - node
+  - rdf
+  - restaurant_menu_hbew_product
+  - restaurant_menu_igey_itemlist
+  - taxonomy
+  - user
+package: 'Restaurant Menu'

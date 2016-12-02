@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Menu item'
+type: hbew_product
+description: 'A dish (product) available on the restaurant menu'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

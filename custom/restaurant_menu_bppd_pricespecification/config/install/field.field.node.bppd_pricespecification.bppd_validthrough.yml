@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bppd_validthrough
+    - node.type.bppd_pricespecification
+  module:
+    - datetime
+id: node.bppd_pricespecification.bppd_validthrough
+field_name: bppd_validthrough
+entity_type: node
+bundle: bppd_pricespecification
+label: 'Valid Through'
+description: 'Use for special offeres'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

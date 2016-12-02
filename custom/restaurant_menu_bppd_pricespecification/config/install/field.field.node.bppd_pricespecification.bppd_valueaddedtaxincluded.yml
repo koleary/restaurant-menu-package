@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bppd_valueaddedtaxincluded
+    - node.type.bppd_pricespecification
+id: node.bppd_pricespecification.bppd_valueaddedtaxincluded
+field_name: bppd_valueaddedtaxincluded
+entity_type: node
+bundle: bppd_pricespecification
+label: 'Includes tax'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Tax included'
+  off_label: 'Tax not included'
+field_type: boolean

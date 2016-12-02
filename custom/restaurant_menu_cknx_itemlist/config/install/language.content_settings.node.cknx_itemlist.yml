@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cknx_itemlist
+id: node.cknx_itemlist
+target_entity_type_id: node
+target_bundle: cknx_itemlist
+default_langcode: site_default
+language_alterable: false

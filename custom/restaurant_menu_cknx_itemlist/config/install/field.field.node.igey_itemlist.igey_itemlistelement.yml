@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.igey_itemlistelement
+    - node.type.cknx_itemlist
+    - node.type.igey_itemlist
+id: node.igey_itemlist.igey_itemlistelement
+field_name: igey_itemlistelement
+entity_type: node
+bundle: igey_itemlist
+label: 'Menu category'
+description: 'Add or reference a sub category, for example Entrees or Salads.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cknx_itemlist: cknx_itemlist
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

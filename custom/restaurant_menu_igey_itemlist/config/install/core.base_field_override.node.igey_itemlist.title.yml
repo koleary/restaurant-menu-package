@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.igey_itemlist
+id: node.igey_itemlist.title
+field_name: title
+entity_type: node
+bundle: igey_itemlist
+label: 'Menu name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

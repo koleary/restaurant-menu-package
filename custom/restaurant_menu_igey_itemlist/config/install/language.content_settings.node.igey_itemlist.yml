@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.igey_itemlist
+id: node.igey_itemlist
+target_entity_type_id: node
+target_bundle: igey_itemlist
+default_langcode: site_default
+language_alterable: false

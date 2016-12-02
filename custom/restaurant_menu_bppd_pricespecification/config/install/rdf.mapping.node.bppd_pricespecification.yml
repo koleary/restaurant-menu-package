@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bppd_pricespecification
+  module:
+    - node
+id: node.bppd_pricespecification
+targetEntityType: node
+bundle: bppd_pricespecification
+types:
+  - 'schema:PriceSpecification'
+fieldMappings:
+  bppd_eligiblequantity:
+    properties:
+      - 'schema:eligibleQuantity'
+  bppd_eligibletransactionvolume:
+    properties:
+      - 'schema:eligibleTransactionVolume'
+  bppd_price:
+    properties:
+      - 'schema:price'
+  bppd_validthrough:
+    properties:
+      - 'schema:validThrough'
+  bppd_valueaddedtaxincluded:
+    properties:
+      - 'schema:valueAddedTaxIncluded'
+  title:
+    properties:
+      - 'schema:name'
+  field_currency:
+    properties:
+      - 'schema:priceCurrency'

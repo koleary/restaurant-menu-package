@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hbew_description
+    - node.type.hbew_product
+id: node.hbew_product.hbew_description
+field_name: hbew_description
+entity_type: node
+bundle: hbew_product
+label: 'Menu item description'
+description: 'Add a brief description of the menu item (optional).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

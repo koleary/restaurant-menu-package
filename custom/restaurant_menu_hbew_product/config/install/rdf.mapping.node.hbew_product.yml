@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hbew_product
+  module:
+    - node
+id: node.hbew_product
+targetEntityType: node
+bundle: hbew_product
+types:
+  - 'schema:Product'
+fieldMappings:
+  hbew_additionalproperty:
+    properties:
+      - 'schema:additionalProperty'
+  hbew_additionaltype:
+    properties:
+      - 'schema:additionalType'
+  hbew_aggregaterating:
+    properties:
+      - 'schema:aggregateRating'
+  hbew_alternatename:
+    properties:
+      - 'schema:alternateName'
+  hbew_brand:
+    properties:
+      - 'schema:brand'
+  hbew_description:
+    properties:
+      - 'schema:description'
+  hbew_image:
+    properties:
+      - 'schema:image'
+  hbew_isrelatedto:
+    properties:
+      - 'schema:isRelatedTo'
+  hbew_issimilarto:
+    properties:
+      - 'schema:isSimilarTo'
+  hbew_potentialaction:
+    properties:
+      - 'schema:potentialAction'
+  title:
+    properties:
+      - 'schema:name'
+  field_price:
+    properties:
+      - ''
+  field_quantity:
+    properties:
+      - ''

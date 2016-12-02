@@ -1,0 +1,19 @@
+name: 'Menu item'
+description: 'Provides Menu item content type and related configuration. A dish (product) available on the restaurant menu'
+type: module
+core: 8.x
+dependencies:
+  - base_business_content_model_core
+  - datetime
+  - field
+  - file
+  - image
+  - language
+  - menu_ui
+  - node
+  - rdf
+  - restaurant_menu_bppd_pricespecification
+  - taxonomy
+  - user
+  - views
+package: 'Restaurant Menu'

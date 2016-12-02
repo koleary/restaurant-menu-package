@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Menu Category'
+type: cknx_itemlist
+description: 'The menu items available within a specific category, for example soups, or side dishes.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

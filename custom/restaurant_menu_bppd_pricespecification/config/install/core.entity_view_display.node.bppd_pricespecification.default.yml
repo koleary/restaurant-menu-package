@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bppd_pricespecification.bppd_eligiblequantity
+    - field.field.node.bppd_pricespecification.bppd_price
+    - field.field.node.bppd_pricespecification.bppd_validthrough
+    - field.field.node.bppd_pricespecification.bppd_valueaddedtaxincluded
+    - field.field.node.bppd_pricespecification.field_currency
+    - node.type.bppd_pricespecification
+  module:
+    - datetime
+    - user
+id: node.bppd_pricespecification.default
+targetEntityType: node
+bundle: bppd_pricespecification
+mode: default
+content:
+  bppd_price:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  bppd_validthrough:
+    weight: 3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  bppd_valueaddedtaxincluded:
+    weight: 2
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_currency:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  bppd_eligiblequantity: true
+  langcode: true

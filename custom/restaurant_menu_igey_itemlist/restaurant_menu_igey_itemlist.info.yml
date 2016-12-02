@@ -1,0 +1,12 @@
+name: Menu
+description: 'Provides Menu content type and related configuration. The full menu, including all categories'
+type: module
+core: 8.x
+dependencies:
+  - base_business_content_model_mtyk_place
+  - field
+  - language
+  - menu_ui
+  - node
+  - rdf
+package: 'Restaurant Menu'

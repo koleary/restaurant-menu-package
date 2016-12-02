@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hbew_product.bppd_price
+    - field.field.node.hbew_product.field_price
+    - field.field.node.hbew_product.field_quantity
+    - field.field.node.hbew_product.hbew_additionalproperty
+    - field.field.node.hbew_product.hbew_description
+    - field.field.node.hbew_product.hbew_image
+    - image.style.thumbnail
+    - node.type.hbew_product
+  module:
+    - image
+id: node.hbew_product.default
+targetEntityType: node
+bundle: hbew_product
+mode: default
+content:
+  bppd_price:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_price:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_quantity:
+    weight: 8
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  hbew_additionalproperty:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  hbew_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  hbew_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hbew_product
+id: node.hbew_product.title
+field_name: title
+entity_type: node
+bundle: hbew_product
+label: 'Dish name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

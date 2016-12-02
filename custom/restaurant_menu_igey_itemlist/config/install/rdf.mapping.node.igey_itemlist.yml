@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.igey_itemlist
+  module:
+    - node
+id: node.igey_itemlist
+targetEntityType: node
+bundle: igey_itemlist
+types:
+  - 'schema:ItemList'
+fieldMappings:
+  igey_itemlistelement:
+    properties:
+      - 'schema:itemListElement'
+  title:
+    properties:
+      - 'schema:name'
+  hbew_description:
+    properties:
+      - 'schema:description'

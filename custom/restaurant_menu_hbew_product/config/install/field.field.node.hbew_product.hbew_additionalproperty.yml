@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hbew_additionalproperty
+    - node.type.hbew_product
+    - taxonomy.vocabulary.cuisines
+id: node.hbew_product.hbew_additionalproperty
+field_name: hbew_additionalproperty
+entity_type: node
+bundle: hbew_product
+label: Cuisine
+description: 'Specify the cuisine(s) of this item.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cuisines: cuisines
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: cuisines
+field_type: entity_reference

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.currencies
+id: taxonomy_term.currencies
+target_entity_type_id: taxonomy_term
+target_bundle: currencies
+default_langcode: site_default
+language_alterable: false
